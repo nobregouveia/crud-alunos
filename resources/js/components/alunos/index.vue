@@ -53,7 +53,6 @@
             })
             },
             deleteAluno(alunoId) {
-                console.log(alunoId)
                 this.axios
                     .delete(`http://127.0.0.1:8000/api/alunos/${alunoId}`)
                     .then(response => {

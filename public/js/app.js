@@ -5426,7 +5426,6 @@ __webpack_require__.r(__webpack_exports__);
     deleteAluno: function deleteAluno(alunoId) {
       var _this2 = this;
 
-      console.log(alunoId);
       this.axios["delete"]("http://127.0.0.1:8000/api/alunos/".concat(alunoId)).then(function (response) {
         var i = _this2.alunos.map(function (data) {
           return data.id;
